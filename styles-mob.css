@@ -1,0 +1,25 @@
+.headin{
+    font-size: 1.5rem;
+}
+.main-body{
+    margin: 40px 10px;
+}
+.message-container{
+    height: 200px;
+}
+.buttons{
+    width: 100%;
+    height: auto;
+}
+.buttons button {
+    height: 70px;
+    width: 70px;
+    margin: 20px 5px;
+}
+.score-container{
+    width: 90%;
+}
+.score{
+    margin: 20px 5px;
+    margin-bottom: 30px;
+}
