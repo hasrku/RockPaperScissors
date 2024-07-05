@@ -16,6 +16,7 @@
     width: 70px;
     margin: 20px 5px;
     font-size: 1.8rem;
+    border-radius: 12px;
 }
 .score-container{
     width: 90%;
