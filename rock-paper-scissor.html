@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>RockPaperScissor</title>
+</head>
+
+<body>
+    <div class="headin"> ROCK - PAPER - SCISSORS</div>
+
+
+    <div class="main-main-body">
+        <div class="main-body">
+
+            <div class="message-container">
+                <div class="out-conatainer">
+                    <div class="card">
+                        <p style="text-align: center;margin: 10px 0px 5px 0px;">You</p>
+                        <div id="your-move"  class="res-out"></div>
+                    </div>
+                    <div style="align-content: center;">Vs</div>
+                    <div class="card" >
+                        <p style="text-align: center;margin: 10px 0px 5px 0px;">Computer</p>
+                        <div id="comp-move" class="res-out"></div>
+                    </div>
+                </div>
+                <p id="mess-output"></p>
+            </div>
+
+            <div class="buttons">
+                <button id="rock" onclick="
+                    const compMove = generateMove();
+                    disCompMove(compMove);
+                    userRock(compMove);
+                "></button>
+
+                <button id="paper" onclick="
+                    compMove = generateMove();
+                    disCompMove(compMove);
+                    userPaper(compMove);
+                "></button>
+                <button id="scissors" onclick="
+                    compMove = generateMove();
+                    disCompMove(compMove);
+                    userScissors(compMove);
+                "></button>
+            </div>
+
+            <div class="score-container">
+                <div class="wins score">
+                    wins: <span id="dis-win" class="resetall"></span>
+                </div>
+
+                <div class="losses score">
+                    losses: <span id="dis-loss" class="resetall"></span>
+                </div>
+
+                <div class="draws score">
+                    draws: <span id="dis-tie" class="resetall"></span>
+                </div>
+
+            </div>
+
+            <div class="reset-button-container">
+                <button class="reset-button" onclick="
+                    resetScore();
+                    
+                    ">
+                    reset score <i class="fa-solid fa-rotate-right"></i>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
