@@ -58,6 +58,11 @@ body{
     display: flex; 
     justify-content: space-evenly;
 }
+.vs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .res-out{
     height: 110px;
     width: 110px;
